@@ -11,6 +11,10 @@ public class Item {
     private int attribute;
     private int reqLvl;
     
+    public Item()
+    {
+        
+    }
     public Item(String name, int id, int attBonus, int rangeBonus, int magicBonus, int defenseBonus, int attribute, int reqLvl)
     {
         this.name = name;

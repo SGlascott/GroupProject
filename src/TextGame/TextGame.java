@@ -12,7 +12,7 @@ public class TextGame {
         String NameInput = sc.nextLine();
         User character = new User(NameInput);
         boolean running = true;
-        int map[][] = new int[10][10];
+        Map map = new Map();
         
         while(running)
         {            
@@ -25,22 +25,22 @@ public class TextGame {
             else if(input.equals("North"))
             {
                 character.y++;
-                checkMap(character);
+                map.checkMap(character);
             }
             else if(input.equals("South"))
             {
                 character.y--;
-                checkMap(character);
+                 map.checkMap(character);
             }
             else if(input.equals("East"))
             {
                 character.x++;
-                checkMap(character);
+                 map.checkMap(character);
             }
             else if(input.equals("West"))
             {
                 character.x--;
-                checkMap(character);
+                 map.checkMap(character);
             }
             else if(input.equals("Character"))
             {
@@ -49,128 +49,6 @@ public class TextGame {
         }
     }
     
-    private static void checkMap(User character)
-    {
-        if(character.x == 0 && character.y == 0)
-        {
-            System.out.println("Welcome to our game!");
-        }
-        else if(character.x == 0 && character.y == 1)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 0 && character.y == 2)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 0 && character.y == 3)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 0 && character.y == 4)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 0 && character.y == 5)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 0 && character.y == 6)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 0 && character.y == 7)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 0 && character.y == 8)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 0 && character.y == 9)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 1 && character.y == 0)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 1 && character.y == 1)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 1 && character.y == 2)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 1 && character.y == 3)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 1 && character.y == 4)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 1 && character.y == 5)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 1 && character.y == 6)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 1 && character.y == 7)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 1 && character.y == 8)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 1 && character.y == 9)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 2 && character.y == 0)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 2 && character.y == 1)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 2 && character.y == 2)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 2 && character.y == 3)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 2 && character.y == 4)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 2 && character.y == 5)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 2 && character.y == 6)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 2 && character.y == 7)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 2 && character.y == 8)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-        else if(character.x == 2 && character.y == 9)
-        {
-            System.out.println("Your new position is 0,1");
-        }
-    }
+    
     
 }
